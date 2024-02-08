@@ -83,23 +83,18 @@ print("-" * 50)
 
 import datetime
 
-# Prompting the user to input a year
 year = int(input("Enter a year: "))
 
-# Getting the current year
 current_year = datetime.datetime.now().year
 
-# Checking if the given year is a leap year or not
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(f"{year} is a leap year.")
 else:
     print(f"{year} is not a leap year.")
 
-# Checking if the given year is a century year
 if year % 100 == 0:
     print(f"{year} is a century year.")
 
-# Comparing the given year with the current year
 if year > current_year:
     print(f"{year} is in the future.")
 elif year < current_year:
@@ -110,3 +105,4 @@ else:
 # I had to do a lot of googling to figure out this datetime module. 
 # It may be beneficial to go over that some more, or even modules in general
 # in the future for other students.
+# Thanks for taking the time to look at this for me!
