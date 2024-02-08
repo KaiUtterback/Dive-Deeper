@@ -61,3 +61,14 @@ if num3 <= smallest:
     smallest = num3 
     
 print("The smallest is", smallest)
+
+# Task 3
+
+if num1 == num2 and num2 == num3:
+    print("All numbers are equal!")
+if num1 == num2 and num1 == largest:
+    print("the first two numbers are equal and the largest")
+if num1 == num3 and num1 == largest: 
+    print("the first and third numbers are equal and largest")
+if num2 == num3 and num2 == largest:
+    print("the second and third numbers are equal and largest")
