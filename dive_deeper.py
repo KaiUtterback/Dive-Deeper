@@ -25,6 +25,7 @@ else:
     print("Invalid choice!")
 
 # Question 3
+# Task 1
 print("-" * 50)
     
 """ 
@@ -72,3 +73,40 @@ if num1 == num3 and num1 == largest:
     print("the first and third numbers are equal and largest")
 if num2 == num3 and num2 == largest:
     print("the second and third numbers are equal and largest")
+    
+# Question 4
+# Task 1
+# Write a Python Program that prompts the user to input a year. 
+# The program should determine if the given year is a leap year or not. And display a message.
+
+print("-" * 50)
+
+import datetime
+
+# Prompting the user to input a year
+year = int(input("Enter a year: "))
+
+# Getting the current year
+current_year = datetime.datetime.now().year
+
+# Checking if the given year is a leap year or not
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+# Checking if the given year is a century year
+if year % 100 == 0:
+    print(f"{year} is a century year.")
+
+# Comparing the given year with the current year
+if year > current_year:
+    print(f"{year} is in the future.")
+elif year < current_year:
+    print(f"{year} is in the past.")
+else:
+    print(f"{year} is the current year.")
+    
+# I had to do a lot of googling to figure out this datetime module. 
+# It may be beneficial to go over that some more, or even modules in general
+# in the future for other students.
